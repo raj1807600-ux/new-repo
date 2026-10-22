@@ -1,0 +1,33 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Run Backend Server (Flask)",
+      "type": "shell",
+      "command": "python backend/run.py",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "servers"
+      }
+    },
+    {
+      "label": "2. Run Frontend Server (React)",
+      "type": "shell",
+      "command": "$env:Path = \"${workspaceFolder}\\tools\\nodejs;\" + $env:Path; cd frontend; npm run dev -- --host",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "servers"
+      }
+    },
+    {
+      "label": "3. Seed / Reset Database",
+      "type": "shell",
+      "command": "python -m backend.database.seed_data",
+      "problemMatcher": []
+    }
+  ]
+}

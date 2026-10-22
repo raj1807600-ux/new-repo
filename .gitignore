@@ -1,0 +1,28 @@
+# Dependencies
+frontend/node_modules/
+tools/nodejs/
+
+# Build output
+frontend/dist/
+frontend/dist-ssr/
+
+# Python bytecode & cache
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment variables
+.env
+.env.local
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
